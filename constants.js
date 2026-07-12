@@ -3,12 +3,12 @@ const PI = 3.148;
 let radius;
 let circumference;
 
-radius = window.prompt("Enter radius of circle");
-radius = Number(radius);
+// radius = window.prompt("Enter radius of circle");
+// radius = Number(radius);
 
-circumference = 2 * PI * radius;
+// circumference = 2 * PI * radius;
 
-console.log(circumference);
+// console.log(circumference);
 
 document.getElementById("sub").onclick = function () {
   radius = document.getElemntById("rad").value;
