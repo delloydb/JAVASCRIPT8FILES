@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subscription & Payment Practice</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background-color: #f4f7f6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .container {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+      }
+
+      h2 {
+        margin-bottom: 20px;
+        color: #333;
+        font-size: 1.5rem;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      /* Styling Checkbox & Radios */
+      .option-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        cursor: pointer;
+      }
+
+      input[type="checkbox"],
+      input[type="radio"] {
+        margin-right: 10px;
+        width: 18px;
+        height: 18px;
+        accent-color: #007bff; /* Colors the checked state */
+        cursor: pointer;
+      }
+
+      label {
+        font-size: 1rem;
+        color: #495057;
+        cursor: pointer;
+        user-select: none;
+      }
+
+      hr {
+        border: 0;
+        height: 1px;
+        background: #e0e0e0;
+        margin: 20px 0;
+      }
+
+      /* Submit Button Styling */
+      button[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.2s ease-in-out;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+
+      /* Results paragraph styling */
+      .result-text {
+        margin-top: 15px;
+        font-weight: 600;
+        font-size: 0.95rem;
+      }
+
+      #subResult {
+        color: #28a745; /* Green for subscription status */
+      }
+
+      #paymentResult {
+        color: #17a2b8; /* Teal for payment selection */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Checkout Practice</h2>
+
+      <div class="form-group">
+        <div class="option-row">
+          <input type="checkbox" id="myCheckBox" />
+          <label for="myCheckBox">Subscribe</label>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="form-group">
+          Select Payment Method:
+        </p>
+
+        <div class="option-row">
+          <input type="radio" id="visaBtn" name="card" />
+          <label for="visaBtn">Visa</label>
+        </div>
+
+        <div class="option-row">
+          <input type="radio" id="masterCardBtn" name="card" />
+          <label for="masterCardBtn">MasterCard</label>
+        </div>
+
+        <div class="option-row">
+          <input type="radio" id="payPalBtn" name="card" />
+          <label for="payPalBtn">PayPal</label>
+        </div>
+      </div>
+
+      <button type="submit" id="mySubmit">Submit</button>
+
+      <p id="subResult" class="result-text"></p>
+      <p id="paymentResult" class="result-text"></p>
+    </div>
+
+    <script src="checkedproperty.js"></script>
+  </body>
+</html>
