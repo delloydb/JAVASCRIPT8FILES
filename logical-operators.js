@@ -28,3 +28,13 @@ if (temp <= 0 || temp > 30) {
 } else {
   console.log("the weather is GOOD");
 }
+
+//with NOT Operator
+
+const IsSunny = true;
+
+if (!isSunny) {
+  console.log("its cloudy");
+} else {
+  console.log("its sunny");
+}
