@@ -32,5 +32,12 @@ console.log(userName.repeat());
 
 //check whether a string starts with something.
 
-let result = userName.startsWith(" ");
+let result = userName.startsWith(" "); // .endWith()
 console.log(result);
+
+let show = userName.includes(" "); // .endWith()
+console.log(show);
+
+let phoneNumber = "12-34-56-23";
+phoneNumber = phoneNumber.replaceAll("-", "");
+console.log(phoneNumber);
