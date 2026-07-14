@@ -38,6 +38,16 @@ console.log(result);
 let show = userName.includes(" "); // .endWith()
 console.log(show);
 
+//changing characters
 let phoneNumber = "12-34-56-23";
 phoneNumber = phoneNumber.replaceAll("-", "");
+console.log(phoneNumber);
+
+//adding characters to a string to a certain valuelength
+let phoneNumber = "12-34-56-23";
+phoneNumber = phoneNumber.padStart(15, "0"); // adds to front of string the value 0 till the string reaches a maximum length of 15
+console.log(phoneNumber);
+
+let phoneNumber = "12-34-56-23";
+phoneNumber = phoneNumber.padEnd(20, "0"); // adds to the end of string the value 0 till the string reaches a maximum length of 15
 console.log(phoneNumber);
