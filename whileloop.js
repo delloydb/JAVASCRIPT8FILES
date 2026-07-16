@@ -3,3 +3,7 @@
 // example
 
 let username = " ";
+
+while (username === " ") {
+  console.log("Name is missing");
+}
