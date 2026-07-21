@@ -2,8 +2,16 @@
 
 // example
 
-let username = " ";
+let username;
 
 while (username === " ") {
-  console.log("Name is missing");
+  username = window.prompt("enter name");
 }
+
+console.log("Name is missing");
+
+do {
+  username = window.prompt("enter name");
+} while (username === " ");
+
+console.log("Name is missing");
